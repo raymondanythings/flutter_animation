@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animation/views/challenges/implicit_animation/Implicit_animation_challenge_screen.dart';
 import 'package:flutter_animation/views/implicit_animations_screen.dart';
 
 class MenuScreen extends StatelessWidget {
@@ -28,7 +29,14 @@ class MenuScreen extends StatelessWidget {
                 const ImplicitAnimationsScreen(),
               ),
               child: const Text("Implicit Animations"),
-            )
+            ),
+            ElevatedButton(
+              onPressed: () => _goPage(
+                context,
+                const ImplicitAnimationChallengeScreen(),
+              ),
+              child: const Text("Implicit Animation Challenge"),
+            ),
           ],
         ),
       ),
