@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animation/views/challenges/custom_painter/custom_painter_screen.dart';
 import 'package:flutter_animation/views/challenges/explicit_animation/widgets/explicit_animation_challenge_screen.dart';
 import 'package:flutter_animation/views/challenges/implicit_animation/Implicit_animation_challenge_screen.dart';
 import 'package:flutter_animation/views/explicit_animations_screen.dart';
@@ -60,6 +61,13 @@ class MenuScreen extends StatelessWidget {
                 const AppleWatchScreen(),
               ),
               child: const Text("Apple Watch"),
+            ),
+            ElevatedButton(
+              onPressed: () => _goPage(
+                context,
+                const CustomPainterScreen(),
+              ),
+              child: const Text("Custom Painter Challenge"),
             ),
           ],
         ),
