@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animation/views/challenges/custom_painter/custom_painter_screen.dart';
 import 'package:flutter_animation/views/challenges/explicit_animation/widgets/explicit_animation_challenge_screen.dart';
 import 'package:flutter_animation/views/challenges/implicit_animation/Implicit_animation_challenge_screen.dart';
-import 'package:flutter_animation/views/explicit_animations_screen.dart';
-import 'package:flutter_animation/views/implicit_animations_screen.dart';
+import 'package:flutter_animation/views/challenges/swipe_card/widgets/swiping_card_challenge.dart';
 import 'package:flutter_animation/views/projects/views/apple_watch_screen.dart';
+import 'package:flutter_animation/views/projects/views/explicit_animations_screen.dart';
+import 'package:flutter_animation/views/projects/views/implicit_animations_screen.dart';
+import 'package:flutter_animation/views/projects/views/swiping_cards_screen.dart';
 
 class MenuScreen extends StatelessWidget {
   const MenuScreen({super.key});
@@ -68,6 +70,20 @@ class MenuScreen extends StatelessWidget {
                 const CustomPainterScreen(),
               ),
               child: const Text("Custom Painter Challenge"),
+            ),
+            ElevatedButton(
+              onPressed: () => _goPage(
+                context,
+                const SwipingCardsScreen(),
+              ),
+              child: const Text("Swiping Cards"),
+            ),
+            ElevatedButton(
+              onPressed: () => _goPage(
+                context,
+                const SwipingCardsChallengeScreen(),
+              ),
+              child: const Text("Swiping Cards Challenge"),
             ),
           ],
         ),
