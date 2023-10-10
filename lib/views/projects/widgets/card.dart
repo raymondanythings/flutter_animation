@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 class SwipeCard extends StatelessWidget {
   final int index;
+  final Widget? body;
 
-  const SwipeCard({super.key, required this.index});
+  const SwipeCard({super.key, required this.index, this.body});
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +18,11 @@ class SwipeCard extends StatelessWidget {
       child: SizedBox(
         width: size.width * 0.8,
         height: size.height * 0.5,
-        child: Image.asset(
-          "assets/cover/$index.jpg",
-        ),
+        child: body ??
+            Image.asset(
+              "assets/cover/$index.jpg",
+              fit: BoxFit.cover,
+            ),
       ),
     );
   }
