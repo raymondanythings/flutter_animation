@@ -6,6 +6,7 @@ import 'package:flutter_animation/views/challenges/swipe_card/widgets/swiping_ca
 import 'package:flutter_animation/views/projects/views/apple_watch_screen.dart';
 import 'package:flutter_animation/views/projects/views/explicit_animations_screen.dart';
 import 'package:flutter_animation/views/projects/views/implicit_animations_screen.dart';
+import 'package:flutter_animation/views/projects/views/music_player_screen.dart';
 import 'package:flutter_animation/views/projects/views/swiping_cards_screen.dart';
 
 class MenuScreen extends StatelessWidget {
@@ -84,6 +85,13 @@ class MenuScreen extends StatelessWidget {
                 const SwipingCardsChallengeScreen(),
               ),
               child: const Text("Swiping Cards Challenge"),
+            ),
+            ElevatedButton(
+              onPressed: () => _goPage(
+                context,
+                const MusicPlayerScreen(),
+              ),
+              child: const Text("Music Player"),
             ),
           ],
         ),
