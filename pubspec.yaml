@@ -64,6 +64,7 @@ flutter:
   assets:
       - assets/
       - assets/cover/
+      - assets/animations/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
