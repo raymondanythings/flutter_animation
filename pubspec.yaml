@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   lottie: 2.3.2
+  flutter_animate: 4.1.1+1
 
 dev_dependencies:
   flutter_test:
@@ -65,6 +66,10 @@ flutter:
       - assets/
       - assets/cover/
       - assets/animations/
+      - assets/images/
+      - assets/images/London/
+      - assets/images/Pisa/
+      - assets/images/Budapest/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animation/views/challenges/custom_painter/custom_painter_screen.dart';
 import 'package:flutter_animation/views/challenges/explicit_animation/widgets/explicit_animation_challenge_screen.dart';
+import 'package:flutter_animation/views/challenges/final/final_challenge_screen.dart';
 import 'package:flutter_animation/views/challenges/implicit_animation/Implicit_animation_challenge_screen.dart';
 import 'package:flutter_animation/views/challenges/swipe_card/widgets/swiping_card_challenge.dart';
 import 'package:flutter_animation/views/projects/views/apple_watch_screen.dart';
@@ -8,6 +9,7 @@ import 'package:flutter_animation/views/projects/views/explicit_animations_scree
 import 'package:flutter_animation/views/projects/views/implicit_animations_screen.dart';
 import 'package:flutter_animation/views/projects/views/music_player_screen.dart';
 import 'package:flutter_animation/views/projects/views/swiping_cards_screen.dart';
+import 'package:flutter_animation/views/projects/views/wallet_screen.dart';
 
 class MenuScreen extends StatelessWidget {
   const MenuScreen({super.key});
@@ -92,6 +94,20 @@ class MenuScreen extends StatelessWidget {
                 const MusicPlayerScreen(),
               ),
               child: const Text("Music Player"),
+            ),
+            ElevatedButton(
+              onPressed: () => _goPage(
+                context,
+                const WalletScreen(),
+              ),
+              child: const Text("Wallet"),
+            ),
+            ElevatedButton(
+              onPressed: () => _goPage(
+                context,
+                const FinalChallengeScreen(),
+              ),
+              child: const Text("Final Challenge"),
             ),
           ],
         ),
